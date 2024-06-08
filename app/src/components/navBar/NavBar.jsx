@@ -1,5 +1,4 @@
 import { Grid, Link, Typography} from '@mui/material';
-import NoteAddOutlinedIcon from '@mui/icons-material/NoteAddOutlined';
 import { Link as RouterLink } from 'react-router-dom';
 
 export default function NavBar() {
