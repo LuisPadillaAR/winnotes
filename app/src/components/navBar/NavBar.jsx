@@ -10,7 +10,16 @@ export default function NavBar({ url }) {
                     </Typography>
                 </Grid>
                 <Grid item md={2} padding={1}>
-                    <Link variant='body1' component={RouterLink} to={url.link}>{url.name}</Link>
+                    <Grid container flexDirection={'row'} gap={1}>
+                        {
+                        url.map((btn) => {
+                            return (
+                            <Link variant='body1' component={RouterLink} to={btn.link}>{btn.name}</Link>
+                        );
+                    })
+                    } 
+                    </Grid>
+                    
                 </Grid>
             </Grid>
     );

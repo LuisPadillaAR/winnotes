@@ -4,10 +4,10 @@ import { Link as RouterLink } from 'react-router-dom';
 
 export default function Create() {
 
-    const btnAction = {
-        link: '/',
+    const btnAction = [{
+        link: '/notes',
         name: 'Back'
-    };
+    }];
 
     const dateToday = new Date();
     const date = `${dateToday.getDate()}/${dateToday.getMonth()+1}/${dateToday.getFullYear()}`
@@ -30,7 +30,7 @@ export default function Create() {
                                 <Typography color={'GrayText'}>Date: {date}</Typography>
                             </Grid>
                             <Grid item>
-                                <Link variant='button' component={RouterLink} to={'/'}>Save</Link>
+                                <Link variant='button' component={RouterLink} to={'/notes'}>Save</Link>
                             </Grid>
                         </Grid>
                     </Grid>
