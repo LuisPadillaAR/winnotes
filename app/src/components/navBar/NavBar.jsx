@@ -14,7 +14,7 @@ export default function NavBar({ url }) {
                         {
                         url.map((btn) => {
                             return (
-                            <Link variant='body1' component={RouterLink} to={btn.link}>{btn.name}</Link>
+                            <Link key={btn.name} variant='body1' component={RouterLink} to={btn.link}>{btn.name}</Link>
                         );
                     })
                     } 

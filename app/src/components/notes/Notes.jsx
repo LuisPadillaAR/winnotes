@@ -7,15 +7,15 @@ import { useEffect, useState } from 'react';
 export default function Notes() {
 
     const btnAction = [
-    {
-        link: '/',
-        name: 'Home'
-    },
-    {
-        link: '/create',
-        name: 'Create'
-    }
-]
+        {
+            link: '/',
+            name: 'Home'
+        },
+        {
+            link: '/create',
+            name: 'Create'
+        }
+    ]
 
     const [notes, setNotes] = useState([]);
 
@@ -41,7 +41,7 @@ export default function Notes() {
                     {
                         notes.map((e) => {
                             return (
-                                <TableRow>
+                                <TableRow key={e._id}>
                                     <TableCell>
                                         <Link variant='body2' component={RouterLink} to={`/notes/${e._id}`}>{e.title}</Link>
                                     </TableCell>
