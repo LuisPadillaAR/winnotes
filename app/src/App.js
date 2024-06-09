@@ -1,6 +1,7 @@
 import './App.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './components/home/Home';
+import Create from './components/create/Create';
 
 
   const router = createBrowserRouter([
@@ -8,6 +9,10 @@ import Home from './components/home/Home';
       path: '/',
       element: <Home />,
       errorElement: <p>Not found</p>
+    },
+    {
+      path: '/create',
+      element: <Create />
     }
   ])
 
