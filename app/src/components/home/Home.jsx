@@ -13,9 +13,9 @@ export default function Home() {
         return (
             <Table>
                 <TableHead>
-                    <TableRow sx={{backgroundColor: 'tomato'}}>
-                        <TableCell>Name</TableCell>
-                        <TableCell>Date</TableCell>
+                    <TableRow>
+                        <TableCell sx={{fontWeight: 'bold', fontSize: '1em'}}>Name</TableCell>
+                        <TableCell sx={{fontWeight: 'bold', fontSize: '1em'}}>Date</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
